@@ -1,6 +1,7 @@
 import { Button } from "./Button";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import logo from "../assets/logo.png";
+import pdfFile from "../assets/ResumeFile.pdf";
 import React from "react";
 const links = [
   { name: "Home", to: "hero" },
@@ -17,6 +18,15 @@ export const Navbar = () => {
   const handleLinkClick = (to) => {
     scroll.scrollTo(document.getElementById(to).offsetTop - 50);
     setOpen(false);
+  };
+
+  const downloadPdf = () => {
+    const link = document.createElement("a");
+    link.href = pdfFile;
+    link.download = "Rahul_Sharma_React_Developer_2yrs.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
   return (
     <div className="w-full shadow-md  top-0 left-0">
@@ -60,7 +70,12 @@ export const Navbar = () => {
               </ScrollLink>
             </li>
           ))}
-          <Button>Download</Button>
+          <Button
+            onClick={downloadPdf}
+            icon={<ion-icon name="download-outline"></ion-icon>}
+          >
+            Resume{" "}
+          </Button>
         </ul>
       </div>
     </div>

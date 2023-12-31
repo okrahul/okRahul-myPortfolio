@@ -20,7 +20,7 @@ export const ProjectCards = ({ details }) => {
         <div className="flex flex-row">
           <ul className="flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-3 mt-2">
             {details.redirectTo.map((item, ind) => (
-              <li>
+              <li key={ind}>
                 <a href={item.url} className="hover:underline me-3 md:me-4">
                   <ion-icon name={item.icon}></ion-icon>
                 </a>
