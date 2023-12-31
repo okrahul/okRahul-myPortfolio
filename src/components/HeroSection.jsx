@@ -11,7 +11,10 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="mt-auto w-full flex md:flex-row flex-col justify-between px-7 items-center flex-wrap">
+    <section
+      className="mt-auto w-full flex md:flex-row flex-col justify-between px-7 items-center flex-wrap"
+      id="hero"
+    >
       <div className="flex-1">
         <h1 className="text-2xl font-bold mb-4 text-gray-800">
           Hello, I'm Rahul Sharma,

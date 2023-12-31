@@ -2,7 +2,7 @@ import { ProjectCards } from "./Cards";
 import { companyProjectDetails } from "../utils/constants";
 export const ProfessionalWork = () => {
   return (
-    <section className="mt-auto justify-center">
+    <section className="mt-auto justify-center" id="professional-work">
       <span
         className="flex justify-center align-center text-center text-3xl font-semibold
            text-lg font-extrabold leading-[1] text-black sm:text-4xl

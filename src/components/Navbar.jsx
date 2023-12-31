@@ -1,19 +1,23 @@
 import { Button } from "./Button";
-// import "../index.css";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import logo from "../assets/logo.png";
 import React from "react";
 const links = [
-  { name: "Home", link: "/" },
-  { name: "Personal Project", link: "/" },
-  { name: "Professional Work", link: "/" },
-  { name: "Experience", link: "/" },
-
+  { name: "Home", to: "hero" },
+  { name: "Personal Project", to: "personal-project" },
+  { name: "Professional Work", to: "professional-work" },
+  { name: "Experience", to: "experience" },
   // { name: "Blogs", link: "/" },
   // { name: "Contact", link: "/" },
 ];
 
 export const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+
+  const handleLinkClick = (to) => {
+    scroll.scrollTo(document.getElementById(to).offsetTop - 50);
+    setOpen(false);
+  };
   return (
     <div className="w-full shadow-md  top-0 left-0">
       <div className="md:flex bg-white py-4 md:px-10 px-7 justify-between items-center">
@@ -43,12 +47,17 @@ export const Navbar = () => {
               key={ind}
               className="md:ml-8 text-m cursor-pointer md:my-0 my-7"
             >
-              <a
-                href={ele.link}
-                className="text-gray-800 hover:text-gray-400 duration-500 "
+              <ScrollLink
+                to={ele.to}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                offset={-50}
+                onClick={() => handleLinkClick(ele.to)}
+                className="text-gray-800 hover:text-gray-400 duration-500"
               >
                 {ele.name}
-              </a>
+              </ScrollLink>
             </li>
           ))}
           <Button>Download</Button>

@@ -2,7 +2,7 @@ import { ProjectCards } from "./Cards";
 import { personalProjectDetails } from "../utils/constants";
 export const PersonalProject = () => {
   return (
-    <section className="mt-auto justify-center">
+    <section className="mt-auto justify-center" id="personal-project">
       <span
         className="flex justify-center align-center text-center text-3xl font-semibold
            text-lg font-extrabold leading-[1] text-black sm:text-4xl

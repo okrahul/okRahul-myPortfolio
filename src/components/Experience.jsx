@@ -2,7 +2,7 @@ import { ExperienceCards } from "./Cards";
 import { experienceDetails } from "../utils/constants";
 export const Experience = () => {
   return (
-    <section className="mt-auto justify-center">
+    <section className="mt-auto justify-center" id="experience">
       <span
         className="flex justify-center align-center text-center text-3xl font-semibold
        text-lg font-extrabold leading-[1] text-black sm:text-4xl
