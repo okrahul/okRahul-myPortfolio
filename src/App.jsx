@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import { PersonalProject } from "./components/PersonalProject";
 import { Experience } from "./components/Experience";
 import { ProfessionalWork } from "./components/ProfessionalWork";
+import { Blog } from "./components/Blog";
 import { Element } from "react-scroll";
 
 function App() {
@@ -14,16 +15,19 @@ function App() {
       <Element name="hero-section">
         <HeroSection />
       </Element>
-      <Element name="personal-project">
+      <Element name="project">
         <PersonalProject />
       </Element>
-      <Element name="professional-work">
+      <Element>
         <ProfessionalWork />
       </Element>
       <Element name="experience">
         <Experience />
       </Element>
-      {/* <Blog /> */}
+      <Element name="blogs">
+        <Blog />
+      </Element>
+
       {/* <ContactMe />*/}
       <Footer />
     </div>

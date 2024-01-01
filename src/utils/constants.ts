@@ -186,6 +186,77 @@ export const experienceDetails = [
   },
 ];
 
+export const blogsDetails = [
+  {
+    blogsBanner:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--P3SJCibw--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aywoa1fal2dm7rnuc896.png",
+    badge: ["JavaScript"],
+    redirectTo: [
+      {
+        url: "https://dev.to/okrahul/unraveling-event-bubbling-in-javascript-2lij",
+        icon: "globe",
+      },
+    ],
+    url: "https://dev.to/okrahul/unraveling-event-bubbling-in-javascript-2lij",
+    blogsName: "Unraveling Event Bubbling in JavaScript",
+    blogPublish: "7 Nov 23",
+    blogsDetails:
+      "In the world of JavaScript, there are fascinating concepts that underlie the smooth interactivity of web pages. One such concept is",
+  },
+  {
+    blogsBanner:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--6BFLyQkF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ea7pteiqhjfcem5u0z6k.png",
+    badge: ["JavaScript"],
+    url: "https://dev.to/okrahul/optimizing-javascript-with-memoization-a-deep-dive-into-boosting-performance-4i4o",
+    redirectTo: [
+      {
+        url: "https://dev.to/okrahul/optimizing-javascript-with-memoization-a-deep-dive-into-boosting-performance-4i4o",
+        icon: "globe",
+      },
+    ],
+
+    blogsName:
+      "Optimizing JavaScript with Memoization: A Deep Dive into Boosting Performance:",
+    blogPublish: "18 Nov 23",
+    blogsDetails:
+      "In the fast-paced world of JavaScript, efficiency is key. One powerful technique that stands out in the pursuit of optimized code is memoization. This blog post will take you on",
+  },
+  {
+    blogsBanner:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--v30q2Wkg--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/awft59agnqftvakwgv8v.PNG",
+    badge: ["JavaScript"],
+    url: "https://dev.to/okrahul/weather-app-1aa5",
+    redirectTo: [
+      {
+        url: "https://dev.to/okrahul/weather-app-1aa5",
+        icon: "globe",
+      },
+    ],
+
+    blogsName: "Weather app",
+    blogPublish: "19 Jan 22",
+    blogsDetails:
+      "The Weather App In Javascript is a fun project that focuses on simple weather forecasting. The user can examine the current state of",
+  },
+  {
+    blogsBanner:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--bvXLO1Ez--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mj02bijpolhwk0p7ydf6.PNG",
+    badge: ["JavaScript"],
+    url: "https://dev.to/okrahul/windows-calculator-51mi",
+    redirectTo: [
+      {
+        url: "https://dev.to/okrahul/windows-calculator-51mi",
+        icon: "globe",
+      },
+    ],
+
+    blogsName: "Windows Calculator",
+    blogPublish: "12 Dec 21",
+    blogsDetails:
+      "HTML(hypertext Markup Language) is the standard markup language used to create basic structure of the website describes how HTML elements are to be displayed on screen. It can control the layout of multiple web pages all at once.",
+  },
+];
+
 export const colors = [
   "bg-green-100 text-green-800",
   "bg-yellow-100 text-yellow-800",

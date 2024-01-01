@@ -5,11 +5,10 @@ import pdfFile from "../assets/ResumeFile.pdf";
 import React from "react";
 const links = [
   { name: "Home", to: "hero" },
-  { name: "Personal Project", to: "personal-project" },
-  { name: "Professional Work", to: "professional-work" },
+  { name: "Project", to: "project" },
   { name: "Experience", to: "experience" },
-  // { name: "Blogs", link: "/" },
-  // { name: "Contact", link: "/" },
+  { name: "Blogs", to: "blogs" },
+  // { name: "Contact", to: "/" },
 ];
 
 export const Navbar = () => {
