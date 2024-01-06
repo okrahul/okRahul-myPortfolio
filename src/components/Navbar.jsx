@@ -13,11 +13,27 @@ const links = [
 
 export const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  // const [theme, setTheme] = React.useState(null);
 
   const handleLinkClick = (to) => {
     scroll.scrollTo(document.getElementById(to).offsetTop - 50);
     setOpen(false);
   };
+
+  // React.useEffect(() => {
+  //   document.documentElement.classList.remove("dark", "light");
+
+  //   if (theme === "dark") {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.add("light");
+  //   }
+  // }, [theme]);
+
+  // const handleThemSwitch = () => {
+  //   setTheme(theme === "dark" ? "light" : "dark");
+  //   console.log("dark", theme);
+  // };
 
   const downloadPdf = () => {
     const link = document.createElement("a");
@@ -69,6 +85,7 @@ export const Navbar = () => {
               </ScrollLink>
             </li>
           ))}
+          {/* <Button onClick={handleThemSwitch}>D/L</Button> */}
           <Button
             onClick={downloadPdf}
             icon={<ion-icon name="download-outline"></ion-icon>}

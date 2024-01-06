@@ -3,12 +3,15 @@ import { Badge } from "./Badge";
 
 export const ProjectCards = ({ details }) => {
   return (
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
-      <img
-        className="rounded-t-lg object-cover h-40 w-full"
-        src={details.projectBanner}
-        alt=""
-      />
+    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow   m-4">
+      {/* dark:bg-gray-800 dark:border-gray-700 */}
+      <div className="rounded-t-lg overflow-scroll">
+        <img
+          className="rounded-t-lg object-cover h-40 w-full md:hover:scale-105 duration-500 "
+          src={details.projectBanner}
+          alt=""
+        />
+      </div>
 
       <div className="p-3">
         <div className="flex mb-2 flex-wrap items-center gap-1">
@@ -17,10 +20,16 @@ export const ProjectCards = ({ details }) => {
           ))}
         </div>
         <div className="flex flex-row">
-          <ul className="flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-3 mt-2">
+          <ul className="flex items-center text-sm font-medium text-gray-500  sm:mt-3 mt-2">
+            {/* dark:text-gray-400 */}
             {details.redirectTo.map((item, ind) => (
               <li key={ind}>
-                <a href={item.url} className="hover:underline me-3 md:me-4">
+                <a
+                  href={item.url}
+                  className="hover:underline me-3 md:me-4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ion-icon name={item.icon}></ion-icon>
                 </a>
               </li>
@@ -34,7 +43,9 @@ export const ProjectCards = ({ details }) => {
           <ul className="list-disc leading-snug">
             {details.projectDetails.map((details, ind) => (
               <li key={ind}>
-                <p className="mb-3 text-sm text-gray-700 dark:text-gray-400">
+                <p className="mb-3 text-sm text-gray-70">
+                  {/* <p className="mb-3 text-sm text-gray-700 dark:text-gray-400"> */}
+
                   {details}
                 </p>
               </li>
@@ -76,9 +87,7 @@ export const ExperienceCards = ({ details }) => {
           <ul className="list-disc leading-snug">
             {details.jobDescription.map((details, ind) => (
               <li key={ind}>
-                <p className="mb-3 text-sm text-gray-700 dark:text-gray-400">
-                  {details}
-                </p>
+                <p className="mb-3 text-sm text-gray-700 ">{details}</p>
               </li>
             ))}
           </ul>
@@ -90,12 +99,15 @@ export const ExperienceCards = ({ details }) => {
 
 export const BlogsCards = ({ details }) => {
   return (
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
-      <img
-        className="rounded-t-lg object-cover h-40 w-full"
-        src={details.blogsBanner}
-        alt=""
-      />
+    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow  m-4">
+      {/* dark:bg-gray-800 dark:border-gray-700 */}
+      <div className="rounded-t-lg overflow-scroll">
+        <img
+          className="rounded-t-lg object-cover h-40 w-full md:hover:scale-105 duration-500 "
+          src={details.blogsBanner}
+          alt=""
+        />
+      </div>
 
       <div className="p-3">
         <div className="flex mb-2 flex-wrap items-center gap-1">
@@ -105,33 +117,36 @@ export const BlogsCards = ({ details }) => {
         </div>
 
         <div className="flex flex-row">
-          <ul className="flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-3 mt-2">
+          <ul className="flex items-center text-sm font-medium text-gray-500 sm:mt-3 mt-2">
             {details.redirectTo.map((item, ind) => (
               <li key={ind}>
-                <a href={item.url} className="hover:underline me-3 md:me-4">
+                <a
+                  href={item.url}
+                  className="hover:underline me-3 md:me-4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ion-icon name={item.icon}></ion-icon>
                 </a>
               </li>
             ))}
           </ul>
         </div>
-        <a href={details.url}>
+        <a href={details.url} target="_blank" rel="noreferrer">
           <p className="text-lg tracking-tight my-2">{details.blogsName}</p>{" "}
         </a>
 
         <div className="px-4 max-h-32 overflow-y-auto">
-          <p className="mb-3 text-sm text-gray-700 dark:text-gray-400 line-clamp-3">
+          <p className="mb-3 text-sm text-gray-700 line-clamp-3">
             {details.blogsDetails}
           </p>
         </div>
 
         <div className="max-h-32 flex flex-col justify-end">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-gray-500 ">
             <span className="font-semibold">Rahul Sharma</span>
           </p>
-          <p className="mb-3 text-xs text-gray-400 dark:text-gray-400">
-            {details.blogPublish}
-          </p>
+          <p className="mb-3 text-xs text-gray-400 ">{details.blogPublish}</p>
         </div>
       </div>
     </div>

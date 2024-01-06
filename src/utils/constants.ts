@@ -34,7 +34,7 @@ export const personalProjectDetails = [
       },
     ],
     projectBanner:
-      "https://images.pexels.com/photos/4327417/pexels-photo-4327417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/ducs8xcjt/image/upload/c_scale,w_531/v1704566984/Screenshot_2023-12-31_at_12.59.42_AM_iujkym.png",
     projectDetails: [
       "The Hoo Bank webpage is built using React, showcasing proficiency in modern web development. The project utilizes React.js for building the user interface, allowing for the creation of dynamic and responsive components.",
       " The Hoo Bank webpage emphasizes a responsive design approach, ensuring a seamless user experience across various devices and screen sizes. Tailwind CSS, a utility-first CSS framework, is employed to facilitate quick and consistent styling, contributing to the overall responsiveness of the application.",
@@ -54,7 +54,7 @@ export const personalProjectDetails = [
       },
     ],
     projectBanner:
-      "https://images.pexels.com/photos/4327417/pexels-photo-4327417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/ducs8xcjt/image/upload/c_scale,w_531/v1704565091/Screenshot_2023-12-31_at_1.05.25_AM_y3hmwm.png",
     projectDetails: [
       "This portfolio website boasts a beautiful and well-crafted user interface. The use of CSS showcases your design skills, creating an aesthetically pleasing layout that enhances the overall visual appeal.",
       "The inclusion of both light and dark theme options demonstrates your consideration for user preferences and accessibility.",
@@ -74,7 +74,7 @@ export const personalProjectDetails = [
       },
     ],
     projectBanner:
-      "https://images.pexels.com/photos/4327417/pexels-photo-4327417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/ducs8xcjt/image/upload/c_scale,w_531/v1704565152/Screenshot_2023-12-31_at_1.23.21_AM_swgnlm.png",
     projectDetails: [
       " Crafted a visually appealing and user-friendly interface using HTML, CSS, and JavaScript, providing an intuitive environment for note management.",
       "Enabled users to seamlessly Create, Read, Update, and Delete notes, enhancing the overall usability of the application.",
