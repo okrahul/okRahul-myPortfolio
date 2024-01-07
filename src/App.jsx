@@ -10,7 +10,7 @@ import { Element } from "react-scroll";
 
 function App() {
   return (
-    <div className="w-screen min-h-screen flex flex-col gap-20">
+    <div className="w-screen min-h-screen flex flex-col gap-20 dark:bg-gray-900">
       <Navbar />
       <Element name="hero-section">
         <HeroSection />

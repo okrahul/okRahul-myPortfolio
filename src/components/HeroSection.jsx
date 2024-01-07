@@ -16,10 +16,10 @@ export const HeroSection = () => {
       id="hero"
     >
       <div className="flex-1">
-        <h1 className="text-2xl font-bold mb-4 text-gray-800">
+        <h1 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-400">
           Hello, I'm Rahul Sharma,
         </h1>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed dark:text-gray-400">
           A passionate frontend developer with over 1.8 years of experience. My
           journey in the world of web development has been driven by a love for
           creating seamless and engaging user experiences. Proficient in
@@ -40,8 +40,8 @@ export const HeroSection = () => {
             className="absolute z-[-1] mt-9"
             style={{
               transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
+              scale: "1.12",
             }}
-            // height={370}
           >
             <path
               fill="#FA4D56"

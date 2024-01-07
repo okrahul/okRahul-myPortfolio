@@ -3,8 +3,8 @@ import { Badge } from "./Badge";
 
 export const ProjectCards = ({ details }) => {
   return (
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow   m-4">
-      {/* dark:bg-gray-800 dark:border-gray-700 */}
+    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow m-4 dark:bg-gray-800 dark:border-gray-700  dark:text-gray-400 ">
+      {/* class="text-sm text-gray-500 sm:text-center dark:text-gray-400" */}
       <div className="rounded-t-lg overflow-scroll">
         <img
           className="rounded-t-lg object-cover h-40 w-full md:hover:scale-105 duration-500 "
@@ -61,7 +61,7 @@ export const ExperienceCards = ({ details }) => {
   return (
     <div
       className="grid grid-rows-1 
-      sm:grid-cols-2 sm:gap-4 gap-2 p-4 w-full md:w-1/2 bg-white rounded-lg shadow  border-gray-200 md:hover:scale-105 duration-500"
+      sm:grid-cols-2 sm:gap-4 gap-2 p-4 w-full md:w-1/2 bg-white rounded-lg shadow  border-gray-200 md:hover:scale-105 duration-500   dark:bg-gray-800 dark:border-gray-700  dark:text-gray-400"
     >
       {/* Duration Column */}
       <div className="flex flex-col items-end">
@@ -83,11 +83,13 @@ export const ExperienceCards = ({ details }) => {
         </div>
         {/* badge */}
 
-        <div className="px-4 max-h-40 overflow-y-auto">
+        <div className="px-4 max-h-40 overflow-y-auto dark:text-gray-400">
           <ul className="list-disc leading-snug">
             {details.jobDescription.map((details, ind) => (
               <li key={ind}>
-                <p className="mb-3 text-sm text-gray-700 ">{details}</p>
+                <p className="mb-3 text-sm text-gray-700  dark:text-gray-400">
+                  {details}
+                </p>
               </li>
             ))}
           </ul>
@@ -99,8 +101,10 @@ export const ExperienceCards = ({ details }) => {
 
 export const BlogsCards = ({ details }) => {
   return (
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow  m-4">
-      {/* dark:bg-gray-800 dark:border-gray-700 */}
+    <div
+      className="max-w-xs bg-white border border-gray-200 rounded-lg shadow  m-4 
+    dark:bg-gray-800 dark:border-gray-700  dark:text-gray-400"
+    >
       <div className="rounded-t-lg overflow-scroll">
         <img
           className="rounded-t-lg object-cover h-40 w-full md:hover:scale-105 duration-500 "
@@ -137,7 +141,7 @@ export const BlogsCards = ({ details }) => {
         </a>
 
         <div className="px-4 max-h-32 overflow-y-auto">
-          <p className="mb-3 text-sm text-gray-700 line-clamp-3">
+          <p className="mb-3 text-sm text-gray-700 line-clamp-3 dark:text-gray-400">
             {details.blogsDetails}
           </p>
         </div>
