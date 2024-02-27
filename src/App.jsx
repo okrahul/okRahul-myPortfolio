@@ -6,11 +6,11 @@ import { PersonalProject } from "./components/PersonalProject";
 import { Experience } from "./components/Experience";
 import { ProfessionalWork } from "./components/ProfessionalWork";
 import { Blog } from "./components/Blog";
+import { ContactMe } from "./components/ContactMe";
+
 import { Element } from "react-scroll";
 
 function App() {
-  console.log(import.meta.env.VITE_SOME_KEY); // "123"
-  console.log(import.meta.env.DB_PASSWORD); // undefined
   return (
     <div className="w-screen min-h-screen flex flex-col gap-20 dark:bg-gray-900">
       <Navbar />
@@ -29,8 +29,9 @@ function App() {
       <Element name="blogs">
         <Blog />
       </Element>
-
-      {/* <ContactMe />*/}
+      <Element name="contact">
+        <ContactMe />
+      </Element>
       <Footer />
     </div>
   );
