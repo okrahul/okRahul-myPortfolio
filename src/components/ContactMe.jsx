@@ -62,6 +62,7 @@ export const ContactMe = () => {
         },
         (error) => {
           console.log("Error", error);
+          setLoading(false);
         }
       )
       .finally(() => {
