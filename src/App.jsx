@@ -9,6 +9,8 @@ import { Blog } from "./components/Blog";
 import { Element } from "react-scroll";
 
 function App() {
+  console.log(import.meta.env.VITE_SOME_KEY); // "123"
+  console.log(import.meta.env.DB_PASSWORD); // undefined
   return (
     <div className="w-screen min-h-screen flex flex-col gap-20 dark:bg-gray-900">
       <Navbar />
