@@ -37,6 +37,7 @@ export const ContactMe = () => {
       from_email: formData.email,
       to_name: "Rahul Sharma",
       message: formData.message,
+      reply_to: formData.email,
     };
 
     emailjs
@@ -58,6 +59,8 @@ export const ContactMe = () => {
               message: "",
               name: "",
             }));
+          } else {
+            setLoading(false);
           }
         },
         (error) => {
