@@ -157,7 +157,7 @@ export const experienceDetails = [
   {
     duration: "Apr 2022 - Present",
     companyName: "CompUp (YC S22)",
-    exp: "1.8+ years",
+    exp: "2+ years",
     badge: [
       "React",
       "TypeScript",
