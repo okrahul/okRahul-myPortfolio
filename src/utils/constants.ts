@@ -266,6 +266,6 @@ export const colors = [
 ];
 
 export const introduction =
-  "A passionate frontend developer with over 1.8 years of experience. My journey in the world of web development has been driven by a love for creating seamless and engaging user experiences. Proficient in technologies like React.js, TypeScript, React Query, Tailwind CSS, and various libraries, I specialize in crafting dynamic and visually appealing interfaces. I thrive on the challenge of turning ideas into interactive and efficient applications. Welcome to my portfolio, where I showcase my dedication to pushing the boundaries of what's possible in frontend development.";
+  "A passionate frontend developer with over 2+ years of experience. My journey in the world of web development has been driven by a love for creating seamless and engaging user experiences. Proficient in technologies like React.js, TypeScript, React Query, Tailwind CSS, and various libraries, I specialize in crafting dynamic and visually appealing interfaces. I thrive on the challenge of turning ideas into interactive and efficient applications. Welcome to my portfolio, where I showcase my dedication to pushing the boundaries of what's possible in frontend development.";
 
 export const helloIamRahul = "Hello, I'm Rahul Sharma,";
