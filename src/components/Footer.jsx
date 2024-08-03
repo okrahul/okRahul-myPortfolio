@@ -14,6 +14,8 @@ export const Footer = () => {
               <a
                 href="https://github.com/okrahul"
                 className="hover:underline me-4 md:me-6"
+                 target="_blank"
+      rel="noopener noreferrer"
               >
                 <ion-icon name="logo-github"></ion-icon>
               </a>
@@ -22,6 +24,8 @@ export const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/rahulsharma101/"
                 className="hover:underline me-4 md:me-6"
+                 target="_blank"
+      rel="noopener noreferrer"
               >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
@@ -30,13 +34,15 @@ export const Footer = () => {
               <a
                 href="https://twitter.com/ok_rahul_dev"
                 className="hover:underline me-4 md:me-6"
+                 target="_blank"
+      rel="noopener noreferrer"
               >
                 {/* unicode of x */}
                 {"\uD835\uDD4F"}
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline" >
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
