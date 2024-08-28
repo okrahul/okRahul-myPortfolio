@@ -74,6 +74,7 @@ export const Navbar = () => {
               key={ind}
               className="md:ml-4 text-m cursor-pointer md:my-0 my-7 "
             >
+              {/** comment style */}
               <ScrollLink
                 to={ele.to}
                 spy={true}

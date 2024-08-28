@@ -155,7 +155,20 @@ export const companyProjectDetails = [
 
 export const experienceDetails = [
   {
-    duration: "Apr 2022 - Present",
+    duration: "Aug 2024 - Present",
+    companyName: "Amphora",
+    exp: "1 Month",
+    badge: [
+      "React",
+      "TypeScript",
+      "React-Query",
+      "React- Context",
+    ],
+    jobTitle: "Software Engineer",
+    jobDescription: [], // ** write description 
+  },
+  {
+    duration: "Apr 2022 - Aug 2024",
     companyName: "CompUp (YC S22)",
     exp: "2.5+ years",
     badge: [
