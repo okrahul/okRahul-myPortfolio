@@ -1,6 +1,19 @@
 import { BlogsCards } from "./Cards";
-import { blogsDetails } from "../utils/constants";
+// import { blogsDetails } from "../utils/constants";
+import {getBlogsData} from "../api"
+import { useEffect,useState } from "react";
 export const Blog = () => {
+  const [blogsDetails, setBlogsDetails] = useState([])
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const response = await getBlogsData();
+      setBlogsDetails(response);
+    };
+
+    fetchBlogs();
+  }, []);
+
   return (
     <section className="mt-auto justify-center" id="blogs">
       <span

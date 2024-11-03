@@ -108,7 +108,7 @@ export const BlogsCards = ({ details }) => {
       <div className="rounded-t-lg overflow-scroll">
         <img
           className="rounded-t-lg object-cover h-40 w-full md:hover:scale-105 duration-500 "
-          src={details.blogsBanner}
+          src={details.blogsBanner} // 
           alt=""
         />
       </div>
@@ -130,7 +130,7 @@ export const BlogsCards = ({ details }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ion-icon name={item.icon}></ion-icon>
+                  <ion-icon name='globe'></ion-icon>
                 </a>
               </li>
             ))}
