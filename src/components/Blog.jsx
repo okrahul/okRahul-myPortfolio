@@ -1,18 +1,13 @@
 import { BlogsCards } from "./Cards";
-// import { blogsDetails } from "../utils/constants";
+import { useQuery } from "@tanstack/react-query";
 import {getBlogsData} from "../api"
-import { useEffect,useState } from "react";
+
 export const Blog = () => {
-  const [blogsDetails, setBlogsDetails] = useState([])
+  const {data: blogsDetails, isError} = useQuery({ queryKey: ['blogsData'], queryFn: getBlogsData })
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      const response = await getBlogsData();
-      setBlogsDetails(response);
-    };
-
-    fetchBlogs();
-  }, []);
+  if (isError || !blogsDetails?.length) {
+    return <div></div>;
+  }
 
   return (
     <section className="mt-auto justify-center" id="blogs">
@@ -25,7 +20,7 @@ export const Blog = () => {
       </span>
 
       <div className="flex flex-wrap justify-around my-4">
-        {blogsDetails.map((details, index) => {
+        {blogsDetails?.map((details, index) => {
           return <BlogsCards key={index} details={details} />;
         })}
       </div>

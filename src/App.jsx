@@ -7,11 +7,14 @@ import { Experience } from "./components/Experience";
 import { ProfessionalWork } from "./components/ProfessionalWork";
 import { Blog } from "./components/Blog";
 import { ContactMe } from "./components/ContactMe";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 
 import { Element } from "react-scroll";
 
 function App() {
+  const queryClient = new QueryClient()
   return (
+    <QueryClientProvider client={queryClient}>
     <div className="w-screen min-h-screen flex flex-col gap-20 dark:bg-gray-900">
       <Navbar />
       <Element name="hero-section">
@@ -34,6 +37,7 @@ function App() {
       </Element>
       <Footer />
     </div>
+    </QueryClientProvider>
   );
 }
 
