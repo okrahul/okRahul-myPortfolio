@@ -100,6 +100,20 @@ export const ExperienceCards = ({ details }) => {
 };
 
 export const BlogsCards = ({ details }) => {
+
+  const getReactionEmoji = (count) => {
+    if (count > 12) {
+      return "🤩"; // Very high reaction count -> Starstruck emoji
+    } else if (count > 10) {
+      return "🔥"; // High reaction count -> Fire emoji
+    } else if (count > 5) {
+      return "👏"; // Moderate reaction count -> Clapping hands emoji
+    } else {
+      return "♥️"; // Low or no reactions -> Eyes emoji
+    }
+  };
+
+  
   return (
     <div
       className="max-w-xs bg-white border border-gray-200 rounded-lg shadow  m-4 
@@ -134,6 +148,16 @@ export const BlogsCards = ({ details }) => {
                 </a>
               </li>
             ))}
+
+
+           <li className="group relative">
+              <span className="cursor-pointer">{getReactionEmoji(details.publicReactionsCount)}</span>
+              {/* Tooltip on hover */}
+              <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs font-medium text-white bg-gray-900 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {details.publicReactionsCount} Reactions
+              </span>
+            </li>
+ 
           </ul>
         </div>
         <a href={details.url} target="_blank" rel="noreferrer">
