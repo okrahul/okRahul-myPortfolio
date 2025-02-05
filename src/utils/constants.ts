@@ -157,7 +157,7 @@ export const experienceDetails = [
   {
     duration: "Aug 2024 - Present",
     companyName: "Amphora",
-    exp: "1 Month",
+    exp: findExperience("Aug 2024"),
     badge: [
       "React",
       "TypeScript",
@@ -209,8 +209,40 @@ export const colors = [
 ];
 
 export const introduction =
-  "A passionate frontend developer with over 2.5+ years of experience. My journey in the world of web development has been driven by a love for creating seamless and engaging user experiences. Proficient in technologies like React.js, TypeScript, React Query, Tailwind CSS, and various libraries, I specialize in crafting dynamic and visually appealing interfaces. I thrive on the challenge of turning ideas into interactive and efficient applications. Welcome to my portfolio, where I showcase my dedication to pushing the boundaries of what's possible in frontend development.";
+  "A passionate frontend developer with over 3+ years of experience. My journey in the world of web development has been driven by a love for creating seamless and engaging user experiences. Proficient in technologies like React.js, TypeScript, React Query, Tailwind CSS, and various libraries, I specialize in crafting dynamic and visually appealing interfaces. I thrive on the challenge of turning ideas into interactive and efficient applications. Welcome to my portfolio, where I showcase my dedication to pushing the boundaries of what's possible in frontend development.";
 
 export const helloIamRahul = "Hello, I'm Rahul Sharma,";
 
 export const getBlogApiURL = "https://dev.to/api/articles?username=okrahul"
+
+
+function findExperience(startDate: string): string {
+  const start = new Date(startDate);
+  const current = new Date();
+
+  // Calculate the difference in years
+  let yearsDifference = current.getFullYear() - start.getFullYear();
+  let monthsDifference = current.getMonth() - start.getMonth();
+
+  // If the current month is before the start month, subtract one year
+  if (monthsDifference < 0) {
+    yearsDifference--;
+    monthsDifference += 12; // Adjust months to be positive
+  }
+
+  // If the day hasn't reached the start date yet in the current month, subtract one month
+  if (current.getDate() < start.getDate()) {
+    monthsDifference--;
+  }
+
+  // Now construct the output string based on years and months
+  if (yearsDifference > 0) {
+    return monthsDifference > 0
+      ? `${yearsDifference} Year${yearsDifference > 1 ? "s" : ""} ${monthsDifference} Month${monthsDifference > 1 ? "s" : ""}`
+      : `${yearsDifference} Year${yearsDifference > 1 ? "s" : ""}`;
+  }
+
+  // If less than a year, return months
+  return monthsDifference < 1 ? "1 Month" : `${monthsDifference} Month${monthsDifference > 1 ? "s" : ""}`;
+}
+

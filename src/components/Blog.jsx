@@ -10,7 +10,7 @@ export const Blog = () => {
   }
 
   return (
-    <section className="mt-auto justify-center" id="blogs">
+    <section className="mt-auto justify-center  w-[100%]" id="blogs">
       <span
         className="flex justify-center align-center text-center text-3xl font-semibold
      text-lg font-extrabold leading-[1] text-black sm:text-4xl
